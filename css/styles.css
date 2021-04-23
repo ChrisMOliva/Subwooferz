@@ -1,0 +1,41 @@
+
+
+
+
+
+
+body {
+    font-family: 'Original Surfer',
+    cursive;
+}
+
+
+
+
+
+
+
+
+
+
+
+.jumbotron {
+    margin: 0;
+    padding: 25px;
+    background-image: linear-gradient(to bottom, #09015f, #400162, #780066, #af0069);
+    color: white;
+}
+
+.navbar {
+    background-color: #af0069;
+}
+
+#carouselDiv {
+    margin: 20px
+}
+
+/* @media (max-width: 688px) {
+    .carousel-item>img {
+        max-height: 146px;
+    }
+} */
