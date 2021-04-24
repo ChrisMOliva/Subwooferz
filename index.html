@@ -33,12 +33,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">About Us <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Cafe</a>
-            <a class="nav-item nav-link" href="#">Grooming</a>
-            <a class="nav-item nav-link" href="#">Adopt</a>
-            <a class="nav-item nav-link " href="#">Events</a>
-            <a class="nav-item nav-link " href="#">Contact Us</a>
+            <a class="nav-item nav-link active" href="#carouselDiv">About Us <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#accordion">Cafe</a>
+            <a class="nav-item nav-link" href="#groomingDiv">Grooming</a>
+            <a class="nav-item nav-link" href="#fosterCards">Adopt</a>
+            <a class="nav-item nav-link " href="#eventsDiv">Events</a>
+            <a class="nav-item nav-link " href="#footerDiv">Contact Us</a>
           </div>
         </div>
     </nav>
@@ -86,7 +86,7 @@
         <div class="card">
           <div class="card-header" id="headingOne">
             <h5 class="mb-0">
-              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <button class="btn btn-dark" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 Coffee and Beverages
               </button>
             </h5>
@@ -105,48 +105,60 @@
         <div class="card">
           <div class="card-header" id="headingTwo">
             <h5 class="mb-0">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Collapsible Group Item #2
+              <button class="btn btn-dark collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Tapas and Bakery
               </button>
             </h5>
           </div>
           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
             <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+           <h2>Tapas</h2>
+             <h5>Small, Fun Plates Made Fresh Daily </h5>
+             <ul>
+               <li></li>
+             </ul>
+             <h2>Bakery</h2>
+             <h5>Delivered Fresh Daily, Courtesy of Sweet Emulsion Bakery and Sweets </h5>
+             <ul>
+               <li></li>
+             </ul>
             </div>
           </div>
         </div>
         <div class="card">
           <div class="card-header" id="headingThree">
             <h5 class="mb-0">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Collapsible Group Item #3
+              <button class="btn btn-dark collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                For the Wooferz
               </button>
             </h5>
           </div>
           <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
             <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+             <h2>Dog-Friendly Treatz</h2>
+             <h5>Organic Treatz Made Specially for Dogs </h5>
+             <ul>
+               <li></li>
+             </ul>
             </div>
           </div>
         </div>
       </div>
-
       <div class="row row-content align-items-center">
-        <div class="col">
-          <div class="media">
-            <img class="d-flex mr-3 img-thumbnail" src="img/BlackLabBath.jpg" alt="Dog in Bath" />
-            <div class="media-body align-self-center">
-              <h3>First Class Grooming</h3>
-                <p class="d-none d-sm-block">Whether it's just a bath, or a full-service grooming, our Subwooferz Family offers an experience that your fur-baby will enjoy!  We use the finest, all natural products, and the gentle touch your pet deserves. </p>
+        <div class="col-sm-4 order-sm-last col-md-3">
+           <h2 class="text-sm">Let Us Handle the Dirty Work</h2>
+              <a role="button" class="btn btn-lg text-white text-nowrap" id="groomingButton" data-toggle="modal" data-target="#reserveModal">Schedule Grooming</a>
+        </div> 
+          <div class="col" id="groomingDiv">
+            <div class="media">
+              <img class="d-flex mr-3 img-thumbnail" src="img/BlackLabBath.jpg" alt="Dog in Bath" />
+                <div class="media-body align-self-center">
+                  <h3>First Class Grooming</h3>
+                    <p class="d-none d-sm-block">Whether it's just a bath, or a full-service grooming, our Subwooferz Family offers an experience that your fur-baby will enjoy!  We use the finest, all natural products, and the gentle touch your pet deserves.</p>
+                </div>
             </div>
-          </div>
-        </div> 
-        <div class="col-md-4 col-xl-2 mt-4">
-          <h2 class="text-sm-right">Let Us Handle the Dirty Work</h2>
-          <a role="button" class="btn btn-lg text-white text-nowrap" id="groomingButton" data-toggle="modal" data-target="#reserveModal">Schedule Grooming</a>
-        </div> 
-      </div>
+          </div>    
+        </div>
 
       <div id="reserveModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
@@ -246,7 +258,7 @@
         </div>
       </div> 
       
-      	<div class="container">
+      	<div class="container" id="eventsDiv">
 		<div class="row row-striped">
 			<div class="col-2 text-right">
 				<h1 class="display-4"><span class="badge badge-secondary">22</span></h1>
@@ -279,16 +291,16 @@
 		</div>
 	</div>
 
-  <footer class="site-footer">
+  <footer class="site-footer" id="footerDiv">
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-2 offset-1">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
-                        <li><a href="aboutus.html">About</a></li>
-                        <li><a href="#">Sites</a></li>
-                        <li><a href="contactus.html">Contact</a></li>
+                        <li><a href="#carouselDiv">About Us</a></li>
+                        <li><a href="#groomingDiv">Grooming</a></li>
+                        <li><a href="#footerDiv">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-sm-5 text-center">
@@ -299,8 +311,8 @@
                     <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-650-555-1234</a><br />
-                    <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> info@subwooferz.com</a>
+                    <a role="button" class="btn btn-link" href="tel:+65065551234"><i class="fa fa-phone"></i> 1-650-555-1234</a><br />
+                    <a role="button" class="btn btn-link" href="mailto:info@subwooferz.com"><i class="fa fa-envelope-o"></i> info@subwooferz.com</a>
                 </div>
             </div>
         </div>

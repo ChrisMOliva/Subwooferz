@@ -10,6 +10,12 @@ body {
     background-color: #f6c065;
 }
 
+footer {
+    background-image: linear-gradient(to bottom, #09015f, #400162, #780066, #af0069);
+    padding: 20px 0;
+    color: white;
+}
+
 
 
 .jumbotron {
@@ -27,8 +33,16 @@ body {
     margin: 20px;
 }
 
+.btn-success {
+    background-color: #09015f;
+}
+
 .btn-primary {
     background-color: #af0069;
+}
+
+.btn-dark {
+    background-color: #780066;
 }
 
 .row-striped:nth-of-type(odd) {
@@ -45,11 +59,20 @@ body {
     padding: 15px 0;
 }
 
-#carouselDiv {
-    margin: 20px;
-    padding: 10px;
-    background-color: #55b3b1;
+.fa {
+   color: white;
 }
+
+#carouselDiv {
+    padding: 20px;
+    /* border: 20px #55b3b1 solid; */
+}
+
+#accordion .card {
+    background-color: #55b3b1;
+    color: white;
+}
+
 
 #groomingButton {
     background-color: #af0069;
