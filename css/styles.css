@@ -12,14 +12,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
 .jumbotron {
     margin: 0;
     padding: 25px;
@@ -31,8 +23,42 @@ body {
     background-color: #af0069;
 }
 
+.carouselItem {
+    margin: 20px;
+}
+
+.btn-primary {
+    background-color: #af0069;
+}
+
+.row-striped:nth-of-type(odd) {
+    background-color: #efefef;
+    border-left: 4px #000000 solid;
+}
+
+.row-striped:nth-of-type(even) {
+    background-color: #ffffff;
+    border-left: 4px #efefef solid;
+}
+
+.row-striped {
+    padding: 15px 0;
+}
+
 #carouselDiv {
-    margin: 20px
+    margin: 20px;
+    padding: 10px;
+    background-color: #55b3b1;
+}
+
+#groomingButton {
+    background-color: #af0069;
+}
+
+#fosterCards {
+    margin-top: 20px;
+    padding: 25px;
+    background-color: #55b3b1;
 }
 
 /* @media (max-width: 688px) {

@@ -11,6 +11,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
 <title>Subwooferz Dog Cafe</title>
 </head>
@@ -130,8 +132,20 @@
         </div>
       </div>
 
-      <div class="col-md-4 col-xl-2 mt-4">
-                   <a role="button" class="btn btn-lg bg-info text-white text-nowrap" data-toggle="modal" data-target="#reserveModal">Schedule Grooming</a>
+      <div class="row row-content align-items-center">
+        <div class="col">
+          <div class="media">
+            <img class="d-flex mr-3 img-thumbnail" src="img/BlackLabBath.jpg" alt="Dog in Bath" />
+            <div class="media-body align-self-center">
+              <h3>First Class Grooming</h3>
+                <p class="d-none d-sm-block">Whether it's just a bath, or a full-service grooming, our Subwooferz Family offers an experience that your fur-baby will enjoy!  We use the finest, all natural products, and the gentle touch your pet deserves. </p>
+            </div>
+          </div>
+        </div> 
+        <div class="col-md-4 col-xl-2 mt-4">
+          <h2 class="text-sm-right">Let Us Handle the Dirty Work</h2>
+          <a role="button" class="btn btn-lg text-white text-nowrap" id="groomingButton" data-toggle="modal" data-target="#reserveModal">Schedule Grooming</a>
+        </div> 
       </div>
 
       <div id="reserveModal" class="modal fade" role="dialog">
@@ -153,8 +167,6 @@
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                             <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
                                         </select>
                                     </div>
                              </div>
@@ -167,10 +179,10 @@
                                 <div class="form-group row">
                                     <label class="col-sm-6 col-form-label">Grooming Service</label>
                                     <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
-                                        <label class="btn btn-success active">
+                                        <label class="btn btn-success active text-nowrap">
                                             <input type="radio" name="groomType" id="bathGroom" autocomplete="off" checked> Bath Only
                                           </label>
-                                          <label class="btn btn-primary">
+                                          <label class="btn btn-primary text-nowrap">
                                             <input type="radio" name="groomType" id="fullGroom" autocomplete="off"> Full Groom
                                           </label>
                                     </div>
@@ -189,7 +201,84 @@
         </div> 
      </div>
 
-     
+     <div class="container" id="fosterCards">
+       <div class="row">
+         <div class="col-lg-3">
+          <div class="card" style="width: auto;">
+              <img class="card-img-top" src="/img/FosterDog1.jpg" alt="FosterDog1">
+              <div class="card-body">
+                <h5 class="card-title">Speck<br>Male - Age: 9</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Bring Me Home</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+          <div class="card" style="width: auto;">
+              <img class="card-img-top" src="/img/FosterDog2.jpg" alt="FosterDog2">
+              <div class="card-body">
+                <h5 class="card-title">Phoenix<br>Female - Age: 3</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Bring Me Home</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+          <div class="card" style="width: auto;">
+              <img class="card-img-top" src="/img/FosterDog3.jpg" alt="FosterDog3">
+              <div class="card-body">
+                <h5 class="card-title">Pixie<br>Female - Age: 6</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Bring Me Home</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+          <div class="card" style="width: auto;">
+              <img class="card-img-top" src="/img/FosterDog4.jpg" alt="FosterDog4">
+              <div class="card-body">
+                <h5 class="card-title">Red<br>Male - Age: 1.5</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Bring Me Home</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+      
+      	<div class="container">
+		<div class="row row-striped">
+			<div class="col-2 text-right">
+				<h1 class="display-4"><span class="badge badge-secondary">22</span></h1>
+				<h2>OCT</h2>
+			</div>
+			<div class="col-10">
+				<h3 class="text-uppercase"><strong>Ice Cream Social</strong></h3>
+				<ul class="list-inline">
+				    <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i> Sunday</li>
+					<li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 12:30 PM - 2:00 PM</li>
+					<li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> Cafe</li>
+				</ul>
+				<p>Bring your friends(fur-balls and hoomanz) as we launch our new line of Dog-friendly Ice Cream "Pints for Pups".  Sample all of our exciting flavors!</p>
+			</div>
+		</div>
+		<div class="row row-striped">
+			<div class="col-2 text-right">
+				<h1 class="display-4"><span class="badge badge-secondary">27</span></h1>
+				<h2>OCT</h2>
+			</div>
+			<div class="col-10">
+				<h3 class="text-uppercase"><strong>Halloween Costume Party</strong></h3>
+				<ul class="list-inline">
+				    <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i> Friday</li>
+					<li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 6:00 PM - 9:00 PM</li>
+					<li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> Cafe</li>
+				</ul>
+				<p>Come join the party and dress for fun in your favorite Halloween costume.  Best costume wins a free full-service grooming and samples of our new Dog-Friendly Ice Cream.</p>
+			</div>
+		</div>
+	</div>
+
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
