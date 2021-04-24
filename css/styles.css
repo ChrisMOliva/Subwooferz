@@ -12,6 +12,7 @@ body {
 
 footer {
     background-image: linear-gradient(to bottom, #09015f, #400162, #780066, #af0069);
+    margin-top: 20px;
     padding: 20px 0;
     color: white;
 }
@@ -46,13 +47,13 @@ footer {
 }
 
 .row-striped:nth-of-type(odd) {
-    background-color: #efefef;
-    border-left: 4px #000000 solid;
+    background-color: #09015f;
+    color: white;
 }
 
 .row-striped:nth-of-type(even) {
-    background-color: #ffffff;
-    border-left: 4px #efefef solid;
+    background-color: #af0069;
+    color: white;
 }
 
 .row-striped {
@@ -69,10 +70,16 @@ footer {
 }
 
 #accordion .card {
+    margin-left: 20px;
+    margin-right: 20px;
     background-color: #55b3b1;
     color: white;
 }
 
+#groomingDiv {
+    margin-top: 20px;
+    margin-left: 20px;
+}
 
 #groomingButton {
     background-color: #af0069;
@@ -80,7 +87,8 @@ footer {
 
 #fosterCards {
     margin-top: 20px;
-    padding: 25px;
+    margin-bottom: 20px;
+    padding: 20px;
     background-color: #55b3b1;
 }
 
